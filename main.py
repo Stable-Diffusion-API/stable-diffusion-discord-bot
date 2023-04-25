@@ -87,7 +87,7 @@ async def stablediffusion(ctx, prompt:str, model:str, negative_prompt:str, aspec
         response = requests.post("https://stablediffusionapi.com/api/v3/dreambooth", json=data)
         resp = response.json()
         try:
-            embeds = discord.Embed(title=f"color=discord.Color.green(), description=msg)    
+            embeds = discord.Embed(color=discord.Color.green(), description=msg)    
             embeds.set_image(url=resp['output'][0])
             await respn.edit_original_response(content=ctx.author.mention, embed=embeds)
         except:
@@ -95,7 +95,7 @@ async def stablediffusion(ctx, prompt:str, model:str, negative_prompt:str, aspec
             await asyncio.sleep(130)
             result = requests.post(fetch, data=json.dumps({'key': key}), headers={'Content-Type': 'application/json'})
             resultk = result.json()    
-            embeds = discord.Embed(title=f"color=discord.Color.red(), description=msg)
+            embeds = discord.Embed(color=discord.Color.red(), description=msg)
             embeds.set_image(url=resultk['output'][0])
             await respn.edit_original_response(content=ctx.author.mention, embed=embeds)
 
