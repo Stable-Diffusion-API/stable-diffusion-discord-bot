@@ -13,7 +13,7 @@ key = os.environ['API_KEY']
 
 words = ['nsfw', 'nude', 'naked', 'pussy', 'vagina', 'dick', 'cock', 'penis', 'loli', 'shota', 'child', 'children', 'xnxx', 'pron', 'hentai', 'asshole', 'sex', 'xxxx', 'xxx', 'pronhub', 'boob', 'boobs']
 
-channel_id = 1097475522931462154:
+channel_id = 1097475522931462154
 
 bot = commands.Bot(command_prefix="!s", case_insensitive=True, intents=intents)
 bot.remove_command("help")
