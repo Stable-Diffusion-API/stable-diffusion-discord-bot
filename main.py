@@ -1,9 +1,10 @@
 
 import discord
-from discord import *
-from discord.ext import *
+from discord import option
+from discord.ext import commands
 
 import asyncio
+import string
 import requests
 import json
 import os
@@ -27,7 +28,6 @@ async def on_ready():
 @option("model", desciption="Choose Sytle Model(default is Deliberate)", choices=["Midjourney", "Anything", "Deliberate", "Dosmix", "Chillout Mix", "Waifu Diffusion", "Dreamlike Photoreal 2.0"], default="Deliberate")
 @option("negative_prompt", description="Enter a negative prompt for image", default="bad quality, poor quality, NSFW")
 @option("aspect_ratio", desciption="Choose aspect ratio for image(default is Square)", choices=["Portrait", "Landscape", "Square", "Desktop", "Mobile"], default="Square")
-@option("model", desciption="Choose Sytle Model(default is Deliberate)", choices=["Midjourney", "Anything", "Deliberate", "Dosmix", "Chillout Mix", "Waifu Diffusion", "Dreamlike Photoreal 2.0"], default="Deliberate")
 async def stablediffusion(ctx, prompt:str, model:str, negative_prompt:str, aspect_ratio:str):
     if ctx.channel.id == channel_id:
         search = prompt if True else ' '.join([prompt, negative_prompt])
