@@ -20,7 +20,7 @@ to change the model use:
 
 Bot uses [Stable Diffusion Api](https://stablediffusionapi.com/) as the backend.
 
-You need a stable Diffusion API for this boat to run
+You need a stable Diffusion API for this bot to run
 
 Create a file called `.env` in the same folder as `main.py`. Inside the `.env` file,
 create a line `BOT_TOKEN = xxxx`, where xxxx is your discord bot token.
