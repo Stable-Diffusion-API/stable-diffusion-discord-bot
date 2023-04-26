@@ -1,6 +1,5 @@
-# AI Powered Art in a TELEGRAM Bot!
+# AI Powered Art in a Discord Bot!
 
-this is a txt2img bot running on tami telegram channel
 
 # Feature 
 
