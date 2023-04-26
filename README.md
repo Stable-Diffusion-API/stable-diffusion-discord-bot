@@ -8,7 +8,7 @@
 3. Blacklist Word - If someone speaks bad words, the bot will not work.
 
 examples:  
-`/dram prompt: a city street`  
+`/dream prompt: a city street`  
 and without people  
 `/dream prompt: a city street negative_prompt: people`  
 
