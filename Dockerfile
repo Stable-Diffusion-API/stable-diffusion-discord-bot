@@ -18,6 +18,7 @@ RUN python3 -m venv venv
 ENV PATH="venv/venv/bin:$PATH"
 
 COPY requirements.txt /workspace/requirements.txt
+COPY server /workspace/server
 
 WORKDIR /workspace
 
