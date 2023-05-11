@@ -1,8 +1,6 @@
 #!/bin/bash
 echo "Container Started"
 
-cd /workspace/server
-
 python3 main.py &
 echo "Server Started, version 0.1.0"
 
